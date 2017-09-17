@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="tabledraganddrop.S1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Button press="demoFromHTML" text="PDF"></Button>
+			<List id="dragableList" items="{materials1>/}" noDataText="Drop Here...."
+				width="300px" headerText='List Data' class="draglist backGrennColour ListHeader">
+				<items>
+					<CustomListItem type="Active" press="handleEmployeeInfo"
+						class="draggable">
+						<HBox>
+							<Text text="{materials1>EmpName}" class="sapUiSmallMarginBegin"
+								width="160px" />
+							<Text text="{materials1>EmpName1}" class="sapUiSmallMarginBegin"
+								width="160px" />
+						</HBox>
+					</CustomListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</core:View>
